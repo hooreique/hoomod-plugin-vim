@@ -80,17 +80,6 @@ noremap <nowait> <k8> <Nop>
 noremap <nowait> <k9> <Nop>
 
 noremap <nowait> ` <Nop>
-noremap <nowait> - <Nop>
-noremap <nowait> = <Nop>
-noremap <nowait> [ <Nop>
-noremap <nowait> ] <Nop>
-noremap <nowait> ; <Nop>
-noremap <nowait> ' <Nop>
-noremap <nowait> , <Nop>
-noremap <nowait> . <Nop>
-noremap <nowait> / <Nop>
-
-" noremap <nowait> 0 <Nop>
 " noremap <nowait> 1 <Nop>
 " noremap <nowait> 2 <Nop>
 " noremap <nowait> 3 <Nop>
@@ -100,6 +89,42 @@ noremap <nowait> / <Nop>
 " noremap <nowait> 7 <Nop>
 " noremap <nowait> 8 <Nop>
 " noremap <nowait> 9 <Nop>
+" noremap <nowait> 0 <Nop>
+noremap <nowait> - <Nop>
+noremap <nowait> = <Nop>
+
+noremap <nowait> ~ <Nop>
+noremap <nowait> ! <Nop>
+noremap <nowait> @ <Nop>
+noremap <nowait> # <Nop>
+noremap <nowait> $ <Nop>
+noremap <nowait> % <Nop>
+noremap <nowait> ^ <Nop>
+noremap <nowait> & <Nop>
+noremap <nowait> * <Nop>
+noremap <nowait> ( <Nop>
+noremap <nowait> ) <Nop>
+noremap <nowait> _ <Nop>
+noremap <nowait> + <Nop>
+
+noremap <nowait> [ <Nop>
+noremap <nowait> ] <Nop>
+noremap <nowait> <Leader> <Nop>
+noremap <nowait> <Bslash> <Nop>
+noremap <nowait> ; <Nop>
+noremap <nowait> ' <Nop>
+noremap <nowait> , <Nop>
+noremap <nowait> . <Nop>
+noremap <nowait> / <Nop>
+
+noremap <nowait> { <Nop>
+noremap <nowait> } <Nop>
+noremap <nowait> | <Nop>
+noremap <nowait> : <Nop>
+noremap <nowait> " <Nop>
+noremap <nowait> <lt> <Nop>
+noremap <nowait> > <Nop>
+noremap <nowait> ? <Nop>
 
 noremap <nowait> a <Nop>
 noremap <nowait> b <Nop>
@@ -127,6 +152,7 @@ noremap <nowait> w <Nop>
 noremap <nowait> x <Nop>
 noremap <nowait> y <Nop>
 noremap <nowait> z <Nop>
+
 noremap <nowait> A <Nop>
 noremap <nowait> B <Nop>
 noremap <nowait> C <Nop>
