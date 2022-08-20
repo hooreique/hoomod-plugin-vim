@@ -415,7 +415,7 @@ noremap <nowait> / <Nop>
 
 noremap <nowait> { <Nop>
 noremap <nowait> } <Nop>
-noremap <nowait> | <Nop>
+noremap <nowait> <Bar> <Nop>
 noremap <nowait> : <Nop>
 noremap <nowait> " <Nop>
 noremap <nowait> <lt> <Nop>
