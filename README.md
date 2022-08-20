@@ -2,6 +2,7 @@
 
 Hoomod is simply a mod for vim,
 but almost every default behavior were changed.
+and it is based on Colemak layout, not Qwerty.
 
 Using Hoomod, you can use vim more intuitively.
 It uses keys not word oriented but finger oriented.
