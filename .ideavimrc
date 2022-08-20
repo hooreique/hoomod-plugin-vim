@@ -168,12 +168,16 @@ noremap <nowait> Z <Nop>
 
 " cursor up
 nnoremap <nowait> u k
+nnoremap <nowait> <Up> k
 " cursor down
 nnoremap <nowait> e j
+nnoremap <nowait> <Down> j
 " cursor left
 nnoremap <nowait> n h
+nnoremap <nowait> <Left> h
 " cursor right
 nnoremap <nowait> i l
+nnoremap <nowait> <Right> l
 " cursor previous paragraph
 nnoremap <nowait> U {k$
 " cursor next paragraph

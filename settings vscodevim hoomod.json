@@ -1,0 +1,81 @@
+{
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "$HOME/.vscodevimrc",
+  "vim.useCtrlKeys": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["a"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<Tab>"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<S-Tab>"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["/"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["z"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["x"],
+      "commands": ["redo"]
+    },
+    {
+      "before": ["w"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["j"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["J"],
+      "commands": ["workbench.action.focusNextGroup"]
+    },
+    {
+      "before": ["q"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["p"],
+      "commands": ["workbench.action.togglePanel"]
+    },
+    {
+      "before": ["'"],
+      "commands": ["actions.find"]
+    },
+    {
+      "before": ["\""],
+      "commands": ["workbench.action.showCommands"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["a"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<Tab>"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<S-Tab>"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["/"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["'"],
+      "commands": ["actions.find"]
+    }
+  ]
+}
