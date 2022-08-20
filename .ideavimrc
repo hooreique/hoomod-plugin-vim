@@ -261,6 +261,8 @@ nnoremap <nowait> r i
 nnoremap <nowait> T R
 nnoremap <nowait> R O
 nnoremap <nowait> <CR> o
+nnoremap <nowait> <Return> o
+nnoremap <nowait> <Enter> o
 " to visual mode
 nnoremap <nowait> g v
 
