@@ -404,3 +404,17 @@ onoremap <nowait> <Space> zz
 " ----
 
 onoremap <nowait> d d
+
+" ========================
+"
+" insert mode
+"
+" ========================
+
+" ----
+" auto closings
+" ----
+
+inoremap <nowait> ( ()<Esc>i
+inoremap <nowait> [ []<Esc>i
+inoremap <nowait> { {}<Esc>i
