@@ -1,4 +1,5 @@
 let $LANG = 'en_US'
+syntax on
 
 " init
 
