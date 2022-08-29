@@ -1,4 +1,7 @@
 let $LANG = 'en_US'
+set backspace=indent,eol,start
+set number
+set autoindent expandtab tabstop=2 shiftwidth=2
 syntax on
 
 " init
@@ -262,9 +265,12 @@ nnoremap <nowait> t a
 nnoremap <nowait> r i
 nnoremap <nowait> T R
 nnoremap <nowait> R O
-nnoremap <nowait> <CR> o
-nnoremap <nowait> <Return> o
-nnoremap <nowait> <Enter> o
+" nnoremap <nowait> <CR> o
+" nnoremap <nowait> <Return> o
+" nnoremap <nowait> <Enter> o
+nnoremap <nowait> <CR> A<CR>
+nnoremap <nowait> <Return> A<CR>
+nnoremap <nowait> <Enter> A<CR>
 " to visual mode
 nnoremap <nowait> g v
 
