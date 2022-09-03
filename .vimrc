@@ -287,6 +287,19 @@ nnoremap <nowait> ; A;<ESC>
 " append {
 nnoremap <nowait> { A<Space>{
 
+" ----
+" action
+" ----
+
+" substitute
+nnoremap <nowait> a :%s/\<<C-R><C-W>\>//g<Left><Left>
+" reindent block
+nnoremap <nowait> <Tab> [{=%
+" undo
+nnoremap <nowait> z u
+" redo
+nnoremap <nowait> x <C-R>
+
 " ========================
 "
 " visual mode
