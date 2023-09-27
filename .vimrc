@@ -1,7 +1,5 @@
 let $LANG = 'en_US'
-set noerrorbells
-set visualbell
-set t_vb=
+set noerrorbells visualbell t_vb=
 set backspace=indent,eol,start
 set number
 set autoindent expandtab tabstop=4 shiftwidth=4
@@ -284,6 +282,8 @@ nnoremap <nowait> g v
 " edit
 " ----
 
+" default x
+nnoremap <nowait> x x
 " backspace and go to insert mode
 nnoremap <nowait> <BS> dhi
 " delete and go to insert mode
@@ -304,7 +304,7 @@ nnoremap <nowait> <Tab> [{=%
 " undo
 nnoremap <nowait> z u
 " redo
-nnoremap <nowait> x <C-R>
+nnoremap <nowait> Z <C-R>
 
 " ========================
 "
@@ -377,6 +377,16 @@ vnoremap <nowait> D "+d
 vnoremap <nowait> C "+y
 " paste from system clipboard
 vnoremap <nowait> V "+p
+
+" ----
+" edit
+" ----
+
+" default x
+vnoremap <nowait> x x
+" backspace, delete
+vnoremap <nowait> <BS> d
+vnoremap <nowait> <Del> d
 
 " ========================
 "

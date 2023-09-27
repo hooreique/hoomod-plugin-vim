@@ -279,6 +279,8 @@ nnoremap <nowait> g v
 
 " refactor rename
 nnoremap <nowait> a :action RenameElement<CR>
+" default x
+nnoremap <nowait> x x
 " backspace and go to insert mode
 nnoremap <nowait> <BS> dhi
 " delete and go to insert mode
@@ -298,7 +300,7 @@ nnoremap <nowait> { A<Space>{
 " undo
 nnoremap <nowait> z :action $Undo<CR>
 " redo
-nnoremap <nowait> x :action $Redo<CR>
+nnoremap <nowait> Z :action $Redo<CR>
 
 " ----
 " editor
@@ -396,6 +398,11 @@ vnoremap <nowait> V "+p
 " edit
 " ----
 
+" default x
+vnoremap <nowait> x x
+" backspace, delete
+vnoremap <nowait> <BS> d
+vnoremap <nowait> <Del> d
 " comment
 vnoremap <nowait> / :action CommentByLineComment<CR>
 " auto indent lines
