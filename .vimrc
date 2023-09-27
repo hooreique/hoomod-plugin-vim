@@ -253,11 +253,14 @@ nnoremap <nowait> <Space> zz
 " ----
 
 " delete (cut)
-nnoremap <nowait> d d
-" yank (copy)
-nnoremap <nowait> c y
+nnoremap <nowait> d "zdd
 " put (paste)
-nnoremap <nowait> v p
+nnoremap <nowait> v "zp
+
+" cut to system clipboard
+nnoremap <nowait> D "+dd
+" paste from system clipboard
+nnoremap <nowait> V "+p
 
 " ----
 " mode
@@ -362,11 +365,18 @@ vnoremap <nowait> <Space> zz
 " ----
 
 " delete (cut)
-vnoremap <nowait> d d
+vnoremap <nowait> d "zd
 " yank (copy)
-vnoremap <nowait> c y
+vnoremap <nowait> c "zy
 " put (paste)
-vnoremap <nowait> v p
+vnoremap <nowait> v "zp
+
+" cut to system clipboard
+vnoremap <nowait> D "+d
+" copy to system clipboard
+vnoremap <nowait> C "+y
+" paste from system clipboard
+vnoremap <nowait> V "+p
 
 " ========================
 "
@@ -421,12 +431,6 @@ onoremap <nowait> F <C-U>
 onoremap <nowait> S <C-D>
 " scroll current line to middle
 onoremap <nowait> <Space> zz
-
-" ----
-" default
-" ----
-
-onoremap <nowait> d d
 
 " ========================
 "

@@ -61,11 +61,16 @@ nnoremap <nowait> <Space> zz
 " ----
 
 " delete (cut)
-nnoremap <nowait> d d
-" yank (copy)
-nnoremap <nowait> c y
+"     BUG: It waits despite <nowait>
+"     Workaroud: Use d<Esc> instead of d
+nnoremap <nowait> d "zdd
 " put (paste)
-nnoremap <nowait> v p
+nnoremap <nowait> v "zp
+
+" cut to system clipboard
+nnoremap <nowait> D "+dd
+" paste from system clipboard
+nnoremap <nowait> V "+p
 
 " ----
 " mode
@@ -86,48 +91,14 @@ nnoremap <nowait> g v
 " edit
 " ----
 
-" refactor rename
-" nnoremap <nowait> a :action RenameElement<CR>
 " backspace and go to insert mode
 nnoremap <nowait> <BS> dhi
 " delete and go to insert mode
 nnoremap <nowait> <Del> xi
-" indent
-" nnoremap <nowait> <Tab> :action EditorIndentLineOrSelection<CR>
-" unindent
-" nnoremap <nowait> <S-Tab> :action EditorUnindentSelection<CR>
-" comment
-" nnoremap <nowait> / :action CommentByLineComment<CR>
-" append :
-" nnoremap <nowait> : A:<ESC>
 " append ;
 nnoremap <nowait> ; A;<ESC>
 " append {
 nnoremap <nowait> { A<Space>{
-" undo
-" nnoremap <nowait> z :action $Undo<CR>
-" redo
-" nnoremap <nowait> x :action $Redo<CR>
-
-" ----
-" editor
-" ----
-
-" close current
-" nnoremap <nowait> w :action CloseEditor<CR>
-" split window
-" nnoremap <nowait> j :action SplitVertically<CR>
-" focus next window
-" nnoremap <nowait> J :action NextSplitter<CR>
-
-" ----
-" action
-" ----
-
-" find
-" nnoremap <nowait> ' :action Find<CR>
-" generate
-" nnoremap <nowait> " :action Generate<CR>
 
 " ========================
 "
@@ -188,20 +159,18 @@ vnoremap <nowait> <Space> zz
 " ----
 
 " delete (cut)
-vnoremap <nowait> d d
+vnoremap <nowait> d "zd
 " yank (copy)
-vnoremap <nowait> c y
+vnoremap <nowait> c "zy
 " put (paste)
-vnoremap <nowait> v p
+vnoremap <nowait> v "zp
 
-" ----
-" edit
-" ----
-
-" comment
-" vnoremap <nowait> / :action CommentByLineComment<CR>
-" auto indent lines
-" vnoremap <nowait> <Tab> :action AutoIndentLines<CR>
+" cut to system clipboard
+vnoremap <nowait> D "+d
+" copy to system clipboard
+vnoremap <nowait> C "+y
+" paste from system clipboard
+vnoremap <nowait> V "+p
 
 " ========================
 "
@@ -256,12 +225,6 @@ onoremap <nowait> F <C-U>
 onoremap <nowait> S <C-D>
 " scroll current line to middle
 onoremap <nowait> <Space> zz
-
-" ----
-" default
-" ----
-
-onoremap <nowait> d d
 
 " ========================
 "
