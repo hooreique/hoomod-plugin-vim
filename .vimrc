@@ -1,7 +1,10 @@
 let $LANG = 'en_US'
+set noerrorbells
+set visualbell
+set t_vb=
 set backspace=indent,eol,start
 set number
-set autoindent expandtab tabstop=2 shiftwidth=2
+set autoindent expandtab tabstop=4 shiftwidth=4
 syntax on
 
 " init
