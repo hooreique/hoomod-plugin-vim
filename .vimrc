@@ -1,5 +1,6 @@
 let $LANG = 'en_US'
 set noerrorbells visualbell t_vb=
+set ignorecase smartcase
 set backspace=indent,eol,start
 set number
 set autoindent expandtab tabstop=4 shiftwidth=4
@@ -297,6 +298,11 @@ nnoremap <nowait> { A<Space>{
 " action
 " ----
 
+" find
+nnoremap <nowait> / /
+nnoremap <nowait> ? ?
+nnoremap <nowait> . n
+nnoremap <nowait> > N
 " substitute
 nnoremap <nowait> a :%s/\<<C-R><C-W>\>//g<Left><Left>
 " reindent block
