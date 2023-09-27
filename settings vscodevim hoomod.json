@@ -1,9 +1,9 @@
 {
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
+  "vim.useCtrlKeys": false,
   "vim.vimrc.enable": true,
   "vim.vimrc.path": "$HOME/.codevimrc",
-  "vim.useCtrlKeys": false,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["a"],
@@ -26,7 +26,7 @@
       "commands": ["undo"]
     },
     {
-      "before": ["x"],
+      "before": ["Z"],
       "commands": ["redo"]
     },
     {
