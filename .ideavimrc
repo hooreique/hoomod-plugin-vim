@@ -1,3 +1,7 @@
+let $LANG = 'en_US'
+set noerrorbells
+set visualbell
+set t_vb=
 
 " init
 
