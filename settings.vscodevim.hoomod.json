@@ -1,9 +1,6 @@
 {
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
-  "vim.useCtrlKeys": false,
-  "vim.vimrc.enable": true,
-  "vim.vimrc.path": "$HOME/.codevimrc",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["a"],
@@ -42,14 +39,6 @@
       "commands": ["workbench.action.focusNextGroup"]
     },
     {
-      "before": ["q"],
-      "commands": ["workbench.action.toggleSidebarVisibility"]
-    },
-    {
-      "before": ["p"],
-      "commands": ["workbench.action.togglePanel"]
-    },
-    {
       "before": ["'"],
       "commands": ["actions.find"]
     },
@@ -58,6 +47,9 @@
       "commands": ["workbench.action.showCommands"]
     }
   ],
+  "vim.useCtrlKeys": false,
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "$HOME/.codevimrc",
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["a"],
