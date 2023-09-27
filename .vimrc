@@ -212,9 +212,9 @@ nnoremap <nowait> <Left> h
 nnoremap <nowait> i l
 nnoremap <nowait> <Right> l
 " cursor previous paragraph
-nnoremap <nowait> U {k$
+nnoremap <nowait> U ?\S\s*\n\s*\n<CR>0
 " cursor next paragraph
-nnoremap <nowait> E }j^
+nnoremap <nowait> E /\S\s*\n\s*\n<CR>/\S<CR>k0
 " cursor previous word
 nnoremap <nowait> N ge
 " cursor next word
@@ -311,6 +311,17 @@ nnoremap <nowait> <Tab> [{=%
 nnoremap <nowait> z u
 " redo
 nnoremap <nowait> Z <C-R>
+
+" ----
+" macro
+" ----
+
+" start recoding
+nnoremap <nowait> q qy
+" stop recoding
+nnoremap <nowait> Q q
+" playback
+nnoremap <nowait> p @y
 
 " ========================
 "
