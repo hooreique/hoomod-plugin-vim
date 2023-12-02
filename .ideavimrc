@@ -216,8 +216,6 @@ nnoremap <nowait> E /\S\s*\n\s*\n<CR>/\S<CR>k0
 nnoremap <nowait> N ge
 " cursor next word
 nnoremap <nowait> I w
-" cursor first letter in the row
-nnoremap <nowait> l ^
 " cursor first column in the row
 nnoremap <nowait> h 0
 " cursor last column in the row
@@ -226,8 +224,14 @@ nnoremap <nowait> o $
 nnoremap <nowait> H gg
 " cursor tail
 nnoremap <nowait> O G$
-" cursor previous
-nnoremap <nowait> y ``
+
+" back
+nnoremap <nowait> y :action Back<CR>
+" forward
+nnoremap <nowait> Y :action Forward<CR>
+
+" matching brace
+nnoremap <nowait> m :action EditorMatchBrace<CR>
 
 " ----
 " scroll
@@ -277,8 +281,10 @@ nnoremap <nowait> g v
 " edit
 " ----
 
+" reformat
+nnoremap <nowait> l :action ReformatCode<CR>
 " refactor rename
-nnoremap <nowait> a :action RenameElement<CR>
+nnoremap <nowait> k :action RenameElement<CR>
 " default x
 nnoremap <nowait> x x
 " backspace and go to insert mode
@@ -308,6 +314,10 @@ nnoremap <nowait> Z :action $Redo<CR>
 
 " close current
 nnoremap <nowait> w :action CloseEditor<CR>
+" close active tab
+nnoremap <nowait> W :action CloseActiveTab<CR>
+" toggle project window
+nnoremap <nowait> P :action ActivateProjectToolWindow<CR>
 " split window
 nnoremap <nowait> j :action SplitVertically<CR>
 " focus next window
@@ -316,11 +326,16 @@ nnoremap <nowait> J :action NextSplitter<CR>
 " ----
 " action
 " ----
-
 " find
 nnoremap <nowait> ' :action Find<CR>
-" generate
-nnoremap <nowait> " :action Generate<CR>
+" find in files
+nnoremap <nowait> " :action FindInPath<CR>
+" find usages
+nnoremap <nowait> a :action FindUsages<CR>
+" go to declaration
+nnoremap <nowait> b :action GotoDeclaration<CR>
+" go to implementation
+nnoremap <nowait> B :action GotoImplementation<CR>
 
 " ----
 " macro
@@ -359,8 +374,6 @@ vnoremap <nowait> E }j^
 vnoremap <nowait> N ge
 " cursor next word
 vnoremap <nowait> I w
-" cursor first letter in the row
-vnoremap <nowait> l ^
 " cursor first column in the row
 vnoremap <nowait> h 0
 " cursor last column in the row
@@ -369,8 +382,6 @@ vnoremap <nowait> o $
 vnoremap <nowait> H gg
 " cursor tail
 vnoremap <nowait> O G$
-" cursor previous
-vnoremap <nowait> y ``
 
 " ----
 " scroll
@@ -409,6 +420,8 @@ vnoremap <nowait> V "+p
 " edit
 " ----
 
+" reformat
+vnoremap <nowait> l :action ReformatCode<CR>
 " default x
 vnoremap <nowait> x x
 " backspace, delete
@@ -419,56 +432,11 @@ vnoremap <nowait> / :action CommentByLineComment<CR>
 " auto indent lines
 vnoremap <nowait> <Tab> :action AutoIndentLines<CR>
 
-" ========================
-"
-" operator pending mode
-"
-" ========================
-
 " ----
-" motion
+" action
 " ----
 
-" cursor up
-onoremap <nowait> u k
-" cursor down
-onoremap <nowait> e j
-" cursor left
-onoremap <nowait> n h
-" cursor right
-onoremap <nowait> i l
-" cursor previous paragraph
-onoremap <nowait> U {k$
-" cursor next paragraph
-onoremap <nowait> E }j^
-" cursor previous word
-onoremap <nowait> N ge
-" cursor next word
-onoremap <nowait> I w
-" cursor first letter in the row
-onoremap <nowait> l ^
-" cursor first column in the row
-onoremap <nowait> h 0
-" cursor last column in the row
-onoremap <nowait> o $
-" cursor head
-onoremap <nowait> H gg
-" cursor tail
-onoremap <nowait> O G$
-" cursor previous
-onoremap <nowait> y ``
-
-" ----
-" scroll
-" ----
-
-" scroll up
-onoremap <nowait> f 3<C-Y>
-" scroll down
-onoremap <nowait> s 3<C-E>
-" scroll up half screen
-onoremap <nowait> F <C-U>
-" scroll down half screen
-onoremap <nowait> S <C-D>
-" scroll current line to middle
-onoremap <nowait> <Space> zz
+" find
+vnoremap <nowait> ' :action Find<CR>
+" find in files
+vnoremap <nowait> " :action FindInPath<CR>

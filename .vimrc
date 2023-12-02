@@ -219,8 +219,6 @@ nnoremap <nowait> E /\S\s*\n\s*\n<CR>/\S<CR>k0
 nnoremap <nowait> N ge
 " cursor next word
 nnoremap <nowait> I w
-" cursor first letter in the row
-nnoremap <nowait> l ^
 " cursor first column in the row
 nnoremap <nowait> h 0
 " cursor last column in the row
@@ -298,13 +296,17 @@ nnoremap <nowait> { A<Space>{
 " action
 " ----
 
+" go to local declaration
+nnoremap <nowait> b gd
+" go to global declaration
+nnoremap <nowait> B gD
 " find
 nnoremap <nowait> / /
 nnoremap <nowait> ? ?
 nnoremap <nowait> . n
 nnoremap <nowait> > N
 " substitute
-nnoremap <nowait> a :%s/\<<C-R><C-W>\>//g<Left><Left>
+nnoremap <nowait> k :%s/\<<C-R><C-W>\>//g<Left><Left>
 " reindent block
 nnoremap <nowait> <Tab> [{=%
 " undo
@@ -349,8 +351,6 @@ vnoremap <nowait> E }j^
 vnoremap <nowait> N ge
 " cursor next word
 vnoremap <nowait> I w
-" cursor first letter in the row
-vnoremap <nowait> l ^
 " cursor first column in the row
 vnoremap <nowait> h 0
 " cursor last column in the row
@@ -431,8 +431,6 @@ onoremap <nowait> E }j^
 onoremap <nowait> N ge
 " cursor next word
 onoremap <nowait> I w
-" cursor first letter in the row
-onoremap <nowait> l ^
 " cursor first column in the row
 onoremap <nowait> h 0
 " cursor last column in the row
