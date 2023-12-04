@@ -326,6 +326,7 @@ nnoremap <nowait> J :action NextSplitter<CR>
 " ----
 " action
 " ----
+
 " find
 nnoremap <nowait> ' :action Find<CR>
 " find in files
