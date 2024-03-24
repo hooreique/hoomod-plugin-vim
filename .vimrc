@@ -4,6 +4,8 @@ set ignorecase smartcase
 set backspace=indent,eol,start
 set number
 set autoindent expandtab tabstop=4 shiftwidth=4
+set scrolloff=10
+set notimeout
 syntax on
 
 " init
@@ -200,11 +202,11 @@ noremap <nowait> Z <Nop>
 " ----
 
 " cursor up
-nnoremap <nowait> u k
-nnoremap <nowait> <Up> k
+nnoremap <nowait> u gk
+nnoremap <nowait> <Up> gk
 " cursor down
-nnoremap <nowait> e j
-nnoremap <nowait> <Down> j
+nnoremap <nowait> e gj
+nnoremap <nowait> <Down> gj
 " cursor left
 nnoremap <nowait> n h
 nnoremap <nowait> <Left> h
@@ -220,9 +222,9 @@ nnoremap <nowait> N ge
 " cursor next word
 nnoremap <nowait> I w
 " cursor first column in the row
-nnoremap <nowait> h 0
+nnoremap <nowait> h g0
 " cursor last column in the row
-nnoremap <nowait> o $
+nnoremap <nowait> o g$
 " cursor head
 nnoremap <nowait> H gg
 " cursor tail
@@ -336,9 +338,9 @@ nnoremap <nowait> p @y
 " ----
 
 " cursor up
-vnoremap <nowait> u k
+vnoremap <nowait> u gk
 " cursor down
-vnoremap <nowait> e j
+vnoremap <nowait> e gj
 " cursor left
 vnoremap <nowait> n h
 " cursor right
@@ -352,9 +354,9 @@ vnoremap <nowait> N ge
 " cursor next word
 vnoremap <nowait> I w
 " cursor first column in the row
-vnoremap <nowait> h 0
+vnoremap <nowait> h g0
 " cursor last column in the row
-vnoremap <nowait> o $
+vnoremap <nowait> o g$
 " cursor head
 vnoremap <nowait> H gg
 " cursor tail
@@ -407,66 +409,8 @@ vnoremap <nowait> <Del> d
 
 " ========================
 "
-" operator pending mode
+" Show message to user
 "
 " ========================
 
-" ----
-" motion
-" ----
-
-" cursor up
-onoremap <nowait> u k
-" cursor down
-onoremap <nowait> e j
-" cursor left
-onoremap <nowait> n h
-" cursor right
-onoremap <nowait> i l
-" cursor previous paragraph
-onoremap <nowait> U {k$
-" cursor next paragraph
-onoremap <nowait> E }j^
-" cursor previous word
-onoremap <nowait> N ge
-" cursor next word
-onoremap <nowait> I w
-" cursor first column in the row
-onoremap <nowait> h 0
-" cursor last column in the row
-onoremap <nowait> o $
-" cursor head
-onoremap <nowait> H gg
-" cursor tail
-onoremap <nowait> O G$
-" cursor previous
-onoremap <nowait> y ``
-
-" ----
-" scroll
-" ----
-
-" scroll up
-onoremap <nowait> f 3<C-Y>
-" scroll down
-onoremap <nowait> s 3<C-E>
-" scroll up half screen
-onoremap <nowait> F <C-U>
-" scroll down half screen
-onoremap <nowait> S <C-D>
-" scroll current line to middle
-onoremap <nowait> <Space> zz
-
-" ========================
-"
-" insert mode
-"
-" ========================
-
-" ----
-" auto closings
-" ----
-
-inoremap <nowait> ( ()<Esc>i
-inoremap <nowait> [ []<Esc>i
-inoremap <nowait> { {}<Esc>i
+autocmd VimEnter * echo 'Not sure about hoomod? Type :q! to exit.'
