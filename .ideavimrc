@@ -2,6 +2,8 @@ let $LANG = 'en_US'
 set noerrorbells
 set visualbell
 set t_vb=
+set scrolloff=10
+set notimeout
 
 " init
 
@@ -197,11 +199,11 @@ noremap <nowait> Z <Nop>
 " ----
 
 " cursor up
-nnoremap <nowait> u k
-nnoremap <nowait> <Up> k
+nnoremap <nowait> u gk
+nnoremap <nowait> <Up> gk
 " cursor down
-nnoremap <nowait> e j
-nnoremap <nowait> <Down> j
+nnoremap <nowait> e gj
+nnoremap <nowait> <Down> gj
 " cursor left
 nnoremap <nowait> n h
 nnoremap <nowait> <Left> h
@@ -360,9 +362,9 @@ nnoremap <nowait> p @y
 " ----
 
 " cursor up
-vnoremap <nowait> u k
+vnoremap <nowait> u gk
 " cursor down
-vnoremap <nowait> e j
+vnoremap <nowait> e gj
 " cursor left
 vnoremap <nowait> n h
 " cursor right
