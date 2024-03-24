@@ -1,6 +1,7 @@
 {
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
+  "editor.cursorSurroundingLines": 10,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["a"],
