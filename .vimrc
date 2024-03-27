@@ -10,7 +10,9 @@ syntax on
 
 " init
 
+" The behavior of <Esc> does not have to be modified.
 " noremap <nowait> <Esc> <Esc>
+
 noremap <nowait> <Nul> <Nop>
 noremap <nowait> <BS> <Nop>
 noremap <nowait> <Tab> <Nop>
@@ -89,16 +91,16 @@ noremap <nowait> <k8> <Nop>
 noremap <nowait> <k9> <Nop>
 
 noremap <nowait> ` <Nop>
-" noremap <nowait> 1 <Nop>
-" noremap <nowait> 2 <Nop>
-" noremap <nowait> 3 <Nop>
-" noremap <nowait> 4 <Nop>
-" noremap <nowait> 5 <Nop>
-" noremap <nowait> 6 <Nop>
-" noremap <nowait> 7 <Nop>
-" noremap <nowait> 8 <Nop>
-" noremap <nowait> 9 <Nop>
-" noremap <nowait> 0 <Nop>
+noremap <nowait> 1 <Nop>
+noremap <nowait> 2 <Nop>
+noremap <nowait> 3 <Nop>
+noremap <nowait> 4 <Nop>
+noremap <nowait> 5 <Nop>
+noremap <nowait> 6 <Nop>
+noremap <nowait> 7 <Nop>
+noremap <nowait> 8 <Nop>
+noremap <nowait> 9 <Nop>
+noremap <nowait> 0 <Nop>
 noremap <nowait> - <Nop>
 noremap <nowait> = <Nop>
 
