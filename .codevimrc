@@ -80,6 +80,7 @@ nnoremap <nowait> <Return> o
 nnoremap <nowait> <Enter> o
 " to visual mode
 nnoremap <nowait> g v
+nnoremap <nowait> G V
 
 " ----
 " edit

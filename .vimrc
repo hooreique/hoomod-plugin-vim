@@ -280,6 +280,7 @@ nnoremap <nowait> <Return> A<CR>
 nnoremap <nowait> <Enter> A<CR>
 " to visual mode
 nnoremap <nowait> g v
+nnoremap <nowait> G V
 
 " ----
 " edit
