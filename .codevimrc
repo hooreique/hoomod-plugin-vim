@@ -33,7 +33,7 @@ nnoremap <nowait> h 0
 " cursor last column in the row
 nnoremap <nowait> o $
 " cursor head
-nnoremap <nowait> H gg
+nnoremap <nowait> H gg0
 " cursor tail
 nnoremap <nowait> O G$
 
@@ -139,7 +139,7 @@ vnoremap <nowait> h 0
 " cursor last column in the row
 vnoremap <nowait> o $
 " cursor head
-vnoremap <nowait> H gg
+vnoremap <nowait> H gg0
 " cursor tail
 vnoremap <nowait> O G$
 

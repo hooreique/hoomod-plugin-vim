@@ -228,7 +228,7 @@ nnoremap <nowait> h g0
 " cursor last column in the row
 nnoremap <nowait> o g$
 " cursor head
-nnoremap <nowait> H gg
+nnoremap <nowait> H gg0
 " cursor tail
 nnoremap <nowait> O G$
 " cursor previous
@@ -361,7 +361,7 @@ vnoremap <nowait> h g0
 " cursor last column in the row
 vnoremap <nowait> o g$
 " cursor head
-vnoremap <nowait> H gg
+vnoremap <nowait> H gg0
 " cursor tail
 vnoremap <nowait> O G$
 " cursor previous
